@@ -19,6 +19,6 @@ git commit -q -m "auto: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "nothing new"
 git push -u origin gh-pages -q
 
 # 3. redeploy (wrangler uses cached OAuth from `wrangler login`)
-wrangler pages deploy . --project-name=ats-checker --branch=gh-pages --commit-dirty=true -q
+wrangler pages deploy . --project-name=ats-checker --branch=gh-pages --commit-dirty=true
 
 echo "loop tick done: $(date -u)"
