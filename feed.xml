@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>ATS Resume Blog</title>
+    <link>https://ats-checker.pages.dev/blog/</link>
+    <description>Evergreen ATS resume tips that get you past the robots and into interviews.</description>
+    <item>
+      <title>Tailoring Your Resume Per Job: A 10-Minute System</title>
+      <link>https://ats-checker.pages.dev/blog/tailoring-your-resume-per-job-a-10-minute-system.html</link>
+      <guid>https://ats-checker.pages.dev/blog/tailoring-your-resume-per-job-a-10-minute-system.html</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>You don't need 20 resumes. You need one strong base and a fast tailoring loop.</description>
+    </item>
+    <item>
+      <title>Why Your PDF Resume Might Be Invisible (and How to Fix It)</title>
+      <link>https://ats-checker.pages.dev/blog/why-your-pdf-resume-might-be-invisible-and-how-to-fix-it.html</link>
+      <guid>https://ats-checker.pages.dev/blog/why-your-pdf-resume-might-be-invisible-and-how-to-fix-it.html</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>PDFs aren't always safe. Here's when to use PDF vs Word, and how to test readability.</description>
+    </item>
+    <item>
+      <title>Resume Action Verbs That Survive ATS Scans</title>
+      <link>https://ats-checker.pages.dev/blog/resume-action-verbs-that-survive-ats-scans.html</link>
+      <guid>https://ats-checker.pages.dev/blog/resume-action-verbs-that-survive-ats-scans.html</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Weak verbs get filtered out. Swap 'responsible for' for these high-signal action verbs.</description>
+    </item>
+    <item>
+      <title>The 50 Keywords That Make or Break Your Tech Resume</title>
+      <link>https://ats-checker.pages.dev/blog/the-50-keywords-that-make-or-break-your-tech-resume.html</link>
+      <guid>https://ats-checker.pages.dev/blog/the-50-keywords-that-make-or-break-your-tech-resume.html</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A data-backed look at the skill keywords ATS and recruiters search for most in software and data roles.</description>
+    </item>
+    <item>
+      <title>How to Beat an ATS: 7 Formatting Rules Recruiters Agree On</title>
+      <link>https://ats-checker.pages.dev/blog/how-to-beat-an-ats-7-formatting-rules-recruiters-agree-on.html</link>
+      <guid>https://ats-checker.pages.dev/blog/how-to-beat-an-ats-7-formatting-rules-recruiters-agree-on.html</guid>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Most resumes are rejected by software before a human sees them. Follow these 7 formatting rules to get through the filter.</description>
+    </item>
+  </channel>
+</rss>

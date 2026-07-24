@@ -2,4 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ats-checker.pages.dev/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://ats-checker.pages.dev/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ats-checker.pages.dev/blog/tailoring-your-resume-per-job-a-10-minute-system.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ats-checker.pages.dev/blog/why-your-pdf-resume-might-be-invisible-and-how-to-fix-it.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ats-checker.pages.dev/blog/resume-action-verbs-that-survive-ats-scans.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ats-checker.pages.dev/blog/the-50-keywords-that-make-or-break-your-tech-resume.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ats-checker.pages.dev/blog/how-to-beat-an-ats-7-formatting-rules-recruiters-agree-on.html</loc><lastmod>2026-07-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
