@@ -6,11 +6,11 @@
 <title>Free ATS Resume Checker — Score Your Resume Against Job Descriptions</title>
 <meta name="description" content="Paste your resume and a job description to get an instant ATS (Applicant Tracking System) score, keyword match, and actionable tips. 100% free, private, runs in your browser." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://syrex1013.github.io/ats-resume-checker/" />
+<link rel="canonical" href="https://ats-checker.pages.dev/" />
 <meta property="og:title" content="Free ATS Resume Checker" />
 <meta property="og:description" content="Instant ATS score + keyword match + tips. Private, runs in your browser." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://syrex1013.github.io/ats-resume-checker/" />
+<meta property="og:url" content="https://ats-checker.pages.dev/" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="stylesheet" href="styles.css" />
 <script type="application/ld+json">
@@ -28,21 +28,22 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <span class="brand">ATS&nbsp;Resume&nbsp;Checker</span>
-    <nav><a href="blog/">Blog</a> <a href="#tips">Tips</a> <a id="support-link" href="#" rel="noopener">Support</a></nav>
+    <a class="brand" href="/">ATS&nbsp;Resume&nbsp;Checker</a>
+    <nav><a href="blog/">Blog</a> <a href="#tips">Templates</a> <a id="support-link" href="#" rel="noopener">Support</a></nav>
   </div>
 </header>
 
 <main class="wrap">
   <section class="hero">
+    <span class="badge">100% free · private · no upload</span>
     <h1>Free ATS Resume Checker</h1>
-    <p class="sub">See how an Applicant Tracking System scores your resume — and fix the gaps before a human ever reads it. Private: nothing leaves your browser.</p>
+    <p class="sub">See how an Applicant Tracking System scores your resume — and fix the gaps before a human ever reads it. Everything runs locally in your browser.</p>
   </section>
 
   <section class="tool">
     <div class="inputs">
       <div class="field">
-        <label for="resume">Your resume <span class="muted">(paste text or upload)</span></label>
+        <label for="resume">Your resume <span class="muted">(paste text or upload a .txt / .pdf)</span></label>
         <textarea id="resume" placeholder="Paste your resume text here…"></textarea>
         <div class="row">
           <input type="file" id="file" accept=".txt,.pdf" />
@@ -70,28 +71,39 @@
       <div id="breakdown" class="breakdown"></div>
       <ul id="tips" class="tips"></ul>
     </div>
+
+    <p class="privacy-note">🔒 Your resume never leaves this page. Analysis happens entirely on your device.</p>
   </section>
 
   <section id="tips" class="monetization">
     <h2>Get more interviews</h2>
     <div class="cards">
       <a id="aff1" class="card" href="#" target="_blank" rel="noopener sponsored">
+        <span class="card-tag">Sponsored</span>
         <h3>Build a recruiter-ready resume</h3>
         <p id="aff1-desc">Use a proven builder that formats for ATS by default.</p>
-        <span class="cta">Try it (sponsored) →</span>
+        <span class="cta">Try it →</span>
       </a>
       <a id="gumroad" class="card" href="#" target="_blank" rel="noopener">
+        <span class="card-tag">Product</span>
         <h3>50 ATS-ready resume templates</h3>
         <p>Copy-paste templates + a keyword-mapping worksheet. Instant download.</p>
         <span class="cta">Get the pack →</span>
       </a>
       <a id="aff2" class="card" href="#" target="_blank" rel="noopener sponsored">
+        <span class="card-tag">Sponsored</span>
         <h3>Get expert resume feedback</h3>
         <p id="aff2-desc">Hire a vetted writer to rewrite your resume.</p>
-        <span class="cta">See options (sponsored) →</span>
+        <span class="cta">See options →</span>
       </a>
     </div>
     <p class="disclaimer">This tool is free and independent. Sponsored links support its development at no cost to you.</p>
+  </section>
+
+  <section class="from-blog">
+    <h2>From the blog</h2>
+    <div id="blog-teasers" class="teasers"></div>
+    <a class="more" href="blog/">Read all ATS tips →</a>
   </section>
 </main>
 

@@ -145,6 +145,21 @@ async function extractPdf(file){
 
 /* ----------------------------- wiring ---------------------------------- */
 applyConfig();
+
+// Load latest blog posts as teasers on the homepage (internal linking for SEO)
+(async ()=>{
+  try{
+    const res = await fetch("blog/posts.json");
+    const posts = await res.json();
+    const top = posts.slice(0,4);
+    $("blog-teasers").innerHTML = top.map(p=>
+      `<a class="teaser" href="blog/${p.slug}.html">
+         <h3>${p.title}</h3>
+         <p>${p.excerpt}</p>
+       </a>`).join("");
+  }catch(e){ /* non-fatal: teasers just stay empty */ }
+})();
+
 $("analyze").addEventListener("click", async ()=>{
   const resumeText = $("resume").value.trim();
   const jdText = $("jd").value.trim();
