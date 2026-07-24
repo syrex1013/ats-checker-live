@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ATS Resume Blog — Get Past the Robots, Get the Interview</title>
+<meta name="description" content="Practical, no-fluff ATS resume tips that actually get you interviews." />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <span class="brand">ATS&nbsp;Resume&nbsp;Checker</span>
+  <nav><a href="../">Tool</a> <a href="#posts">Posts</a> <a href="../#tips">Templates</a></nav>
+</div></header>
+<main class="wrap">
+  <section class="hero"><h1>ATS Resume Blog</h1>
+  <p class="sub">Field-tested tips to beat Applicant Tracking Systems and land more interviews.</p></section>
+  <section id="posts" class="posts"><div id="list"></div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p>Free ATS Resume Checker — <a href="../">try the tool</a>.</p></div></footer>
+<script>
+// Posts are rendered from posts.json so the auto-blog can add new ones without code changes.
+fetch('posts.json').then(r=>r.json()).then(posts=>{
+  document.getElementById('list').innerHTML = posts.map(p=>
+    `<article class="post">
+       <h2><a href="${p.slug}.html">${p.title}</a></h2>
+       <p class="muted">${p.date} · ${p.read}</p>
+       <p>${p.excerpt}</p>
+       <a class="cta" href="${p.slug}.html">Read →</a>
+     </article>`).join('');
+}).catch(()=>{ document.getElementById('list').innerHTML = '<p>Posts loading…</p>'; });
+</script>
+<style>
+.posts{max-width:680px;margin:10px auto 40px}
+.post{border-bottom:1px solid #232a45;padding:22px 0}
+.post h2{margin:0 0 6px;font-size:22px}
+.post h2 a{color:var(--ink);text-decoration:none}
+.post h2 a:hover{color:var(--accent)}
+.post .cta{color:var(--accent);font-weight:700}
+</style>
+</body>
+</html>

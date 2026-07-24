@@ -1,0 +1,64 @@
+:root{
+  --bg:#0f1220; --panel:#171b2e; --ink:#e8ecf5; --muted:#9aa3bd;
+  --accent:#5b8cff; --accent2:#9b6bff; --ok:#1f9d55; --warn:#e0a800; --bad:#d9534f;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(1200px 600px at 70% -10%,#1c2342,#0f1220 60%);color:var(--ink);line-height:1.55}
+.wrap{max-width:920px;margin:0 auto;padding:0 18px}
+.site-header{position:sticky;top:0;z-index:5;backdrop-filter:blur(8px);
+  background:rgba(15,18,32,.72);border-bottom:1px solid #20263f}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{font-weight:800;letter-spacing:.2px;background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.site-header nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+.site-header nav a:hover{color:var(--ink)}
+.hero{text-align:center;padding:46px 0 18px}
+.hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px}
+.hero .sub{color:var(--muted);max-width:640px;margin:0 auto;font-size:17px}
+.tool{background:var(--panel);border:1px solid #232a45;border-radius:var(--radius);padding:20px;margin:18px 0}
+.inputs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.inputs{grid-template-columns:1fr}}
+.field label{display:block;font-weight:600;margin-bottom:8px;font-size:14px}
+.muted{color:var(--muted);font-weight:400}
+textarea{width:100%;min-height:180px;resize:vertical;background:#0d1020;color:var(--ink);
+  border:1px solid #2a3252;border-radius:10px;padding:12px;font-size:14px;font-family:inherit}
+textarea:focus{outline:none;border-color:var(--accent)}
+.row{display:flex;align-items:center;gap:10px;margin-top:8px}
+input[type=file]{color:var(--muted);font-size:13px;flex:1}
+.primary{margin-top:16px;width:100%;padding:14px;border:0;border-radius:12px;cursor:pointer;
+  font-size:16px;font-weight:700;color:#fff;
+  background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.primary:hover{filter:brightness(1.08)}
+.ghost{background:transparent;color:var(--muted);border:1px solid #2a3252;border-radius:10px;
+  padding:8px 12px;cursor:pointer;font-size:13px}
+.status{margin-top:12px;font-size:14px;color:var(--muted);min-height:18px}
+.status.ok{color:var(--ok)} .status.err{color:var(--bad)}
+.results{margin-top:22px;border-top:1px dashed #2a3252;padding-top:18px}
+.hidden{display:none}
+.score-card{position:relative;width:180px;margin:0 auto 18px;text-align:center}
+.ring{width:180px;height:180px;transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:#232a45;stroke-width:10}
+.ring-fg{fill:none;stroke:var(--ok);stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .8s ease}
+.score-num{position:absolute;top:64px;left:0;right:0;font-size:46px;font-weight:800}
+.score-num small{font-size:18px;color:var(--muted);font-weight:600}
+.score-label{color:var(--muted);margin:4px 0 0;font-size:14px}
+.breakdown{display:flex;flex-direction:column;gap:6px;max-width:360px;margin:0 auto 16px}
+.b-row{display:flex;justify-content:space-between;background:#0d1020;border:1px solid #232a45;
+  padding:10px 14px;border-radius:10px}
+.tips{list-style:none;padding:0;margin:0;max-width:620px;margin:0 auto;display:grid;gap:10px}
+.tips li{background:#0d1020;border-left:3px solid var(--accent);padding:12px 14px;border-radius:8px;font-size:14px}
+.monetization{margin:30px 0}
+.monetization h2{text-align:center;font-size:24px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+.card{display:block;background:var(--panel);border:1px solid #232a45;border-radius:var(--radius);
+  padding:16px;text-decoration:none;color:var(--ink);transition:.2s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card h3{margin:0 0 8px;font-size:16px}
+.card p{color:var(--muted);font-size:14px;margin:0 0 12px}
+.card .cta{color:var(--accent);font-weight:700;font-size:14px}
+.disclaimer{color:var(--muted);font-size:12px;text-align:center;margin-top:14px}
+.site-footer{border-top:1px solid #20263f;margin-top:30px;padding:22px 0;color:var(--muted);font-size:13px;text-align:center}
+.site-footer a{color:var(--accent)}

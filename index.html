@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free ATS Resume Checker — Score Your Resume Against Job Descriptions</title>
+<meta name="description" content="Paste your resume and a job description to get an instant ATS (Applicant Tracking System) score, keyword match, and actionable tips. 100% free, private, runs in your browser." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://syrex1013.github.io/ats-resume-checker/" />
+<meta property="og:title" content="Free ATS Resume Checker" />
+<meta property="og:description" content="Instant ATS score + keyword match + tips. Private, runs in your browser." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://syrex1013.github.io/ats-resume-checker/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Free ATS Resume Checker",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Analyze a resume against a job description for ATS compatibility, keyword match, and improvement tips. Runs 100% client-side."
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <span class="brand">ATS&nbsp;Resume&nbsp;Checker</span>
+    <nav><a href="blog/">Blog</a> <a href="#tips">Tips</a> <a id="support-link" href="#" rel="noopener">Support</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Free ATS Resume Checker</h1>
+    <p class="sub">See how an Applicant Tracking System scores your resume — and fix the gaps before a human ever reads it. Private: nothing leaves your browser.</p>
+  </section>
+
+  <section class="tool">
+    <div class="inputs">
+      <div class="field">
+        <label for="resume">Your resume <span class="muted">(paste text or upload)</span></label>
+        <textarea id="resume" placeholder="Paste your resume text here…"></textarea>
+        <div class="row">
+          <input type="file" id="file" accept=".txt,.pdf" />
+          <button id="clear" class="ghost" type="button">Clear</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="jd">Target job description <span class="muted">(paste the posting)</span></label>
+        <textarea id="jd" placeholder="Paste the job description you're applying to…"></textarea>
+      </div>
+    </div>
+
+    <button id="analyze" class="primary" type="button">Analyze my resume</button>
+    <p id="status" class="status" role="status"></p>
+
+    <div id="results" class="results hidden">
+      <div class="score-card">
+        <svg viewBox="0 0 120 120" class="ring">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle id="ring-fg" class="ring-fg" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="score-num"><span id="score">0</span><small>/100</small></div>
+        <p id="score-label" class="score-label"></p>
+      </div>
+      <div id="breakdown" class="breakdown"></div>
+      <ul id="tips" class="tips"></ul>
+    </div>
+  </section>
+
+  <section id="tips" class="monetization">
+    <h2>Get more interviews</h2>
+    <div class="cards">
+      <a id="aff1" class="card" href="#" target="_blank" rel="noopener sponsored">
+        <h3>Build a recruiter-ready resume</h3>
+        <p id="aff1-desc">Use a proven builder that formats for ATS by default.</p>
+        <span class="cta">Try it (sponsored) →</span>
+      </a>
+      <a id="gumroad" class="card" href="#" target="_blank" rel="noopener">
+        <h3>50 ATS-ready resume templates</h3>
+        <p>Copy-paste templates + a keyword-mapping worksheet. Instant download.</p>
+        <span class="cta">Get the pack →</span>
+      </a>
+      <a id="aff2" class="card" href="#" target="_blank" rel="noopener sponsored">
+        <h3>Get expert resume feedback</h3>
+        <p id="aff2-desc">Hire a vetted writer to rewrite your resume.</p>
+        <span class="cta">See options (sponsored) →</span>
+      </a>
+    </div>
+    <p class="disclaimer">This tool is free and independent. Sponsored links support its development at no cost to you.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Free ATS Resume Checker — private, client-side. <a href="blog/">Read the blog</a> for ATS tips that get you hired.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
