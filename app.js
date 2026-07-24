@@ -11,7 +11,7 @@
    - AFF1 / AFF2: any affiliate link (ResumeGenius, Indeed, Fiverr, etc.)
    ----------------------------------------------------------------------- */
 const CONFIG = {
-  KOFI_URL:   "https://ko-fi.com/YOUR_USERNAME",          // ← free, instant payouts
+  KOFI_URL:   "https://ko-fi.com/adriandacka",            // ← free, instant payouts
   GUMROAD_URL:"https://YOURNAME.gumroad.com/l/ats-pack",  // ← your template pack
   AFF1_URL:   "https://example.com/affiliate/resume-builder",
   AFF1_DESC:  "Use a proven builder that formats for ATS by default.",
